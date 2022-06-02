@@ -23,10 +23,14 @@ export default function Home() {
         </p>
 
         <div className={styles.grid}>
-          <a href="/services" className={styles.card}>
-            <h2>Serviços &rarr;</h2>
+            <h2>
+              <Link href="/services">
+                <a className={styles.card}> 
+                  Serviços &rarr;
+                </a>
+              </Link>
+            </h2>
             <p>Find in-depth information about Next.js features and API.</p>
-          </a>
 
           <a href="https://nextjs.org/learn" className={styles.card}>
             <h2>Learn &rarr;</h2>
